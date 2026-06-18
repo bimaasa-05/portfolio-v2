@@ -575,6 +575,12 @@ img {
 	animation: floatBadge 4.5s ease-in-out infinite;
 	animation-delay: 1.2s;
 }
+.badge-laravel {
+	top: 9%;
+	right: 20%;
+	animation: floatBadge 4.5s ease-in-out infinite;
+	animation-delay: 1.2s;
+}
 
 @keyframes floatBadge {
 	0%,
