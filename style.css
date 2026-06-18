@@ -575,6 +575,7 @@ img {
 	animation: floatBadge 4.5s ease-in-out infinite;
 	animation-delay: 1.2s;
 }
+
 .badge-laravel {
 	top: 9%;
 	right: 20%;
@@ -964,6 +965,27 @@ img {
 	.browser-mock-wrap {
 		margin-top: 40px;
 		max-width: 320px;
+	}
+
+	/* About & Contact: saat kolom ditumpuk jadi satu kolom,
+     teks dan baris flex disamakan ke tengah agar konsisten
+     dengan perilaku Hero, tidak condong ke satu sisi. */
+	.about-section .col-lg-6:first-child,
+	.contact-section .col-lg-6:first-child {
+		text-align: center;
+	}
+
+	.contact-section .section-subtitle {
+		margin-inline: auto;
+	}
+
+	.about-meta-item,
+	.contact-item {
+		justify-content: center;
+	}
+
+	.contact-item span:not(.contact-icon) {
+		text-align: left;
 	}
 }
 
