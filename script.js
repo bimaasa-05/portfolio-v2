@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			);
 
 			// Buka klien email pengguna dengan data form yang sudah terisi
-			window.location.href = `mailto:example@gmail.com?subject=${subject}&body=${body}`;
+			window.location.href = `mailto:rizqons99@gmail.com?subject=${subject}&body=${body}`;
 
 			formSuccess.classList.add("show");
 			contactForm.classList.remove("was-validated");
