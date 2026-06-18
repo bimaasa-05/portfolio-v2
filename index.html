@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cahya Rizqon — Web Developer</title>
+		<meta
+			name="description"
+			content="Portfolio pribadi Cahya Rizqon, Web Developer yang berfokus pada PHP Native, HTML, CSS, JavaScript, dan Bootstrap." />
+
+		<!-- Google Fonts: Sora untuk heading, Inter untuk body text -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap"
+			rel="stylesheet" />
+
+		<!-- Bootstrap 5 (CDN) -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet" />
+
+		<!-- Bootstrap Icons (CDN) -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- ============================== -->
+		<!-- NAVBAR                         -->
+		<!-- ============================== -->
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+				<div class="container">
+					<a class="navbar-brand" href="#home">
+						<span class="brand-mark">C</span>
+						<span class="brand-text">Cahya Rizqon</span>
+					</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navMenu"
+						aria-controls="navMenu"
+						aria-expanded="false"
+						aria-label="Buka menu navigasi">
+						<span class="toggler-icon"></span>
+						<span class="toggler-icon"></span>
+						<span class="toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navMenu">
+						<ul class="navbar-nav ms-auto align-items-lg-center" id="navList">
+							<!-- nav-indicator dipindah oleh JS untuk menandai link aktif -->
+							<span class="nav-indicator" id="navIndicator"></span>
+							<li class="nav-item">
+								<a class="nav-link active" href="#home" data-section="home"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about" data-section="about"
+									>Tentang</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#projects" data-section="projects"
+									>Proyek</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact" data-section="contact"
+									>Kontak</a
+								>
+							</li>
+							<li class="nav-item ms-lg-3">
+								<a href="#contact" class="btn btn-nav-cta">Hubungi Saya</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- ============================== -->
+			<!-- SECTION: HOME                  -->
+			<!-- ============================== -->
+			<section id="home" class="section hero-section">
+				<div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+				<div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+				<div class="container">
+					<div class="row align-items-center gy-5">
+						<!-- Teks Hero -->
+						<div class="col-lg-6 order-lg-1 order-2 fade-up">
+							<p class="eyebrow">
+								<i class="bi bi-hand-index-thumb"></i> Halo, selamat datang
+							</p>
+							<h1 class="hero-name">Cahya Rizqon</h1>
+							<h2 class="hero-heading">Web Developer</h2>
+							<p class="hero-desc">
+								Saya merupakan seorang developer yang fokus pada pengembangan
+								website menggunakan PHP Native, HTML, CSS, JavaScript, dan
+								Bootstrap. Saya senang membangun aplikasi yang sederhana, cepat,
+								dan mudah digunakan.
+							</p>
+
+							<div class="d-flex flex-wrap gap-3 hero-buttons">
+								<a href="#projects" class="btn btn-primary-ocean">
+									Lihat Project <i class="bi bi-arrow-down-right"></i>
+								</a>
+								<a href="#contact" class="btn btn-outline-ocean">
+									Hubungi Saya
+								</a>
+							</div>
+
+							<!-- Status line bergaya terminal - sentuhan khas developer -->
+							<div class="terminal-status">
+								<span class="terminal-dot"></span>
+								<span class="terminal-text"
+									>status -- Online<span class="terminal-cursor">▍</span></span
+								>
+							</div>
+						</div>
+
+						<!-- Foto Profil dalam Browser Mock -->
+						<div class="col-lg-6 order-lg-2 order-1 fade-up" data-delay="150">
+							<div class="browser-mock-wrap">
+								<div class="browser-mock">
+									<div class="browser-mock-bar">
+										<span class="browser-dot dot-red"></span>
+										<span class="browser-dot dot-yellow"></span>
+										<span class="browser-dot dot-green"></span>
+										<span class="browser-url">cahyarizqon.dev</span>
+									</div>
+									<div class="browser-mock-body">
+										<!-- Ganti src di bawah ini dengan foto profil asli (assets/profile.jpg).
+                       Jika berkas belum tersedia, inisial "CR" akan tampil otomatis sebagai fallback. -->
+										<div class="profile-frame">
+											<div class="profile-fallback">CR</div>
+											<img
+												src="WhatsApp Image 2026-06-17 at 22.54.36.jpeg"
+												alt="Foto Cahya Rizqon"
+												class="profile-photo"
+												onerror="this.style.display = 'none'" />
+										</div>
+									</div>
+								</div>
+
+								<!-- Badge teknologi yang melayang di sekitar foto -->
+								<div class="float-badge badge-php" data-float="1">
+									<i class="bi bi-filetype-php"></i> PHP
+								</div>
+								<div class="float-badge badge-mysql" data-float="2">
+									<i class="bi bi-database"></i> MySQL
+								</div>
+								<div class="float-badge badge-bootstrap" data-float="3">
+									<i class="bi bi-bootstrap-fill"></i> Bootstrap
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#about" class="scroll-cue" aria-label="Gulir ke bawah">
+					<span>Scroll</span>
+					<i class="bi bi-chevron-down"></i>
+				</a>
+			</section>
+
+			<!-- ============================== -->
+			<!-- SECTION: ABOUT                 -->
+			<!-- ============================== -->
+			<section id="about" class="section about-section">
+				<div class="container">
+					<div class="row gy-5">
+						<div class="col-lg-5 fade-up">
+							<p class="eyebrow">
+								<i class="bi bi-person-badge"></i> Tentang Saya
+							</p>
+							<h2 class="section-title">Mengenal Lebih Dekat</h2>
+							<p class="about-text">
+								Saya memiliki ketertarikan dalam pengembangan web dan terus
+								belajar untuk meningkatkan kemampuan dalam membangun aplikasi
+								yang efisien serta mudah digunakan. Saya terbiasa menggunakan
+								PHP Native sebagai backend dan memanfaatkan HTML, CSS,
+								JavaScript, serta Bootstrap untuk membangun antarmuka yang
+								responsif.
+							</p>
+							<div class="about-meta">
+								<div class="about-meta-item">
+									<i class="bi bi-geo-alt"></i> Berbasis di Indonesia
+								</div>
+								<div class="about-meta-item">
+									<i class="bi bi-mortarboard"></i> Terus belajar &amp;
+									berkembang
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-7">
+							<div class="row g-4">
+								<div class="col-sm-6 fade-up" data-delay="0">
+									<div class="skill-card">
+										<div class="skill-icon"><i class="bi bi-window"></i></div>
+										<h3>Frontend</h3>
+										<div class="skill-chips">
+											<span class="chip"
+												><i class="bi bi-filetype-html"></i> HTML</span
+											>
+											<span class="chip"
+												><i class="bi bi-filetype-css"></i> CSS</span
+											>
+											<span class="chip"
+												><i class="bi bi-bootstrap"></i> Bootstrap</span
+											>
+											<span class="chip"
+												><i class="bi bi-filetype-js"></i> JavaScript</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 fade-up" data-delay="100">
+									<div class="skill-card">
+										<div class="skill-icon"><i class="bi bi-server"></i></div>
+										<h3>Backend</h3>
+										<div class="skill-chips">
+											<span class="chip"
+												><i class="bi bi-filetype-php"></i> PHP Native</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 fade-up" data-delay="200">
+									<div class="skill-card">
+										<div class="skill-icon">
+											<i class="bi bi-database-fill"></i>
+										</div>
+										<h3>Database</h3>
+										<div class="skill-chips">
+											<span class="chip"
+												><i class="bi bi-database"></i> MySQL</span
+											>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 fade-up" data-delay="300">
+									<div class="skill-card">
+										<div class="skill-icon"><i class="bi bi-git"></i></div>
+										<h3>Version Control</h3>
+										<div class="skill-chips">
+											<span class="chip"><i class="bi bi-git"></i> Git</span>
+											<span class="chip"
+												><i class="bi bi-github"></i> GitHub</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ============================== -->
+			<!-- SECTION: PROJECTS              -->
+			<!-- ============================== -->
+			<section id="projects" class="section projects-section">
+				<div class="container">
+					<div class="text-center fade-up">
+						<p class="eyebrow justify-content-center">
+							<i class="bi bi-kanban"></i> Proyek
+						</p>
+						<h2 class="section-title">Beberapa Project yang Telah Dibuat</h2>
+						<p class="section-subtitle">
+							Sebagian project yang pernah saya kembangkan menggunakan PHP
+							Native dan Bootstrap.
+						</p>
+					</div>
+
+					<div class="row g-4 mt-3">
+						<!-- Project 1 -->
+						<div class="col-md-6 col-lg-4 fade-up" data-delay="0">
+							<div class="project-card">
+								<div class="project-cover cover-1">
+									<i class="bi bi-box-seam"></i>
+								</div>
+								<div class="project-body">
+									<h3>Inventaris App</h3>
+									<p>
+										Aplikasi inventaris sederhana berbasis PHP Native yang
+										digunakan untuk mengelola data barang, peminjaman, dan
+										pengembalian barang secara efisien.
+									</p>
+									<div class="project-tags">
+										<span class="chip chip-sm">PHP Native</span>
+										<span class="chip chip-sm">MySQL</span>
+										<span class="chip chip-sm">Bootstrap</span>
+									</div>
+									<a
+										href="https://github.com/bimaasa-05/inventaris-app"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn btn-project">
+										<i class="bi bi-github"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 2 -->
+						<div class="col-md-6 col-lg-4 fade-up" data-delay="100">
+							<div class="project-card">
+								<div class="project-cover cover-2">
+									<i class="bi bi-cash-coin"></i>
+								</div>
+								<div class="project-body">
+									<h3>Aplikasi Kasir</h3>
+									<p>
+										Aplikasi kasir sederhana berbasis PHP Native yang membantu
+										proses transaksi penjualan dan pengelolaan data produk.
+									</p>
+									<div class="project-tags">
+										<span class="chip chip-sm">PHP Native</span>
+										<span class="chip chip-sm">MySQL</span>
+										<span class="chip chip-sm">Bootstrap</span>
+									</div>
+									<a
+										href="https://github.com/bimaasa-05/kasir"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn btn-project">
+										<i class="bi bi-github"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 3 -->
+						<div class="col-md-6 col-lg-4 fade-up" data-delay="200">
+							<div class="project-card">
+								<div class="project-cover cover-3">
+									<i class="bi bi-newspaper"></i>
+								</div>
+								<div class="project-body">
+									<h3>Portal Berita</h3>
+									<p>
+										Website portal berita modern yang dikembangkan untuk
+										menampilkan berita secara dinamis dan responsif.
+									</p>
+									<div class="project-tags">
+										<span class="chip chip-sm">PHP Native</span>
+										<span class="chip chip-sm">MySQL</span>
+										<span class="chip chip-sm">Bootstrap</span>
+									</div>
+									<a
+										href="https://github.com/bimaasa-05/web-berita"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn btn-project">
+										<i class="bi bi-github"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ============================== -->
+			<!-- SECTION: CONTACT               -->
+			<!-- ============================== -->
+			<section id="contact" class="section contact-section">
+				<div class="container">
+					<div class="row g-5">
+						<div class="col-lg-5 fade-up">
+							<p class="eyebrow"><i class="bi bi-chat-dots"></i> Kontak</p>
+							<h2 class="section-title">Mari Terhubung</h2>
+							<p class="section-subtitle">
+								Punya project atau ingin berdiskusi? Kirim pesan melalui form,
+								atau hubungi saya langsung lewat kanal di bawah ini.
+							</p>
+
+							<div class="contact-list">
+								<a href="mailto:example@gmail.com" class="contact-item">
+									<span class="contact-icon"
+										><i class="bi bi-envelope"></i
+									></span>
+									<span>
+										<small>Email</small>
+										example@gmail.com
+									</span>
+								</a>
+								<a
+									href="https://github.com/bimaasa-05"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="contact-item">
+									<span class="contact-icon"><i class="bi bi-github"></i></span>
+									<span>
+										<small>GitHub</small>
+										github.com/bimaasa-05
+									</span>
+								</a>
+								<a
+									href="https://www.linkedin.com/in/cahya-rizqon-a5a532390/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="contact-item">
+									<span class="contact-icon"
+										><i class="bi bi-linkedin"></i
+									></span>
+									<span>
+										<small>LinkedIn</small>
+										Cahya Rizqon
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-7 fade-up" data-delay="150">
+							<form class="contact-form" id="contactForm" novalidate>
+								<div class="form-floating mb-3">
+									<input
+										type="text"
+										class="form-control"
+										id="formName"
+										placeholder="Nama"
+										required />
+									<label for="formName">Nama</label>
+									<div class="invalid-feedback">Mohon isi nama Anda.</div>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="email"
+										class="form-control"
+										id="formEmail"
+										placeholder="Email"
+										required />
+									<label for="formEmail">Email</label>
+									<div class="invalid-feedback">
+										Mohon isi email yang valid.
+									</div>
+								</div>
+								<div class="form-floating mb-3">
+									<textarea
+										class="form-control"
+										id="formMessage"
+										placeholder="Pesan"
+										style="height: 140px"
+										required></textarea>
+									<label for="formMessage">Pesan</label>
+									<div class="invalid-feedback">Mohon tulis pesan Anda.</div>
+								</div>
+
+								<button
+									type="submit"
+									class="btn btn-primary-ocean w-100"
+									id="formSubmitBtn">
+									Kirim Pesan <i class="bi bi-send"></i>
+								</button>
+
+								<div class="form-success" id="formSuccess" role="status">
+									<i class="bi bi-check-circle-fill"></i>
+									Pesan berhasil disiapkan! Klien email Anda akan terbuka untuk
+									mengirimkannya.
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- ============================== -->
+		<!-- FOOTER                         -->
+		<!-- ============================== -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-brand">
+						<span class="brand-mark">C</span>
+						<span class="brand-text text-white">Cahya Rizqon</span>
+					</div>
+
+					<div class="footer-social">
+						<a
+							href="https://github.com/bimaasa-05"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="GitHub">
+							<i class="bi bi-github"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/cahya-rizqon-a5a532390/"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="LinkedIn">
+							<i class="bi bi-linkedin"></i>
+						</a>
+					</div>
+				</div>
+				<hr class="footer-divider" />
+				<p class="footer-copy">© 2026 Cahya Rizqon. All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Bootstrap 5 Bundle (JS) -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Custom Script -->
+		<script src="script.js"></script>
+	</body>
+</html>
